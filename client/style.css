@@ -7,7 +7,7 @@
     --red: #fc9047;
   }
   
-  /* ========== RESET & BASE ========== */
+ 
   * {
     box-sizing: border-box;
     margin: 0;
@@ -17,16 +17,25 @@
   html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', Arial, sans-serif;
+    font-family: 'Notable', sans-serif;
     background: var(--main-bg);
     color: var(--text-color);
-    height: auto; /* Remove fixed height */
+    height: auto;
     min-height: 100vh;
-    display: block; /* Remove flex */
+    display: block;
 }
 
+.index-bg {
+  background: url(images/pen.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
   
-  /* ========== MAIN CONTAINER ========== */
+ 
   .container, .main {
     max-width: 800px;
     width: 90%;
@@ -34,7 +43,7 @@
     padding: 1rem;
   }
   
-  /* ========== FORMS ========== */
+ 
   form {
     background: var(--white);
     padding: 1.5rem 2rem;
@@ -66,7 +75,7 @@
     outline: none;
   }
   
-  /* ========== FORM TITLES ========== */
+ 
   #form-title {
     font-size: 1.6rem;
     font-weight: 700;
@@ -75,7 +84,7 @@
     text-align: center;
   }
   
-  /* ========== BUTTONS ========== */
+
   button {
     background-color: var(--primary-accent);
     color: var(--white);
@@ -107,7 +116,7 @@
     color: var(--primary-accent);
   }
   
-  /* ========== ERROR MESSAGES ========== */
+  
   #login-error, #register-error, #notes-error {
     color: var(--red);
     font-weight: 600;
@@ -115,14 +124,14 @@
     text-align: center;
   }
   
-  /* ========== NOTES LIST ========== */
+  
   #notes-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
   
-  /* ========== NOTE CARD ========== */
+  
   .note-item {
     background-color: var(--white);
     padding: 1.4rem 1.6rem;
@@ -173,7 +182,7 @@
     background-color: var(--primary-accent);
   }
   
-  /* ========== SEARCH BAR ========== */
+  
   #search {
     width: 100%;
     padding: 0.75rem 1rem;
@@ -191,7 +200,7 @@
     border-color: var(--secondary-accent);
   }
   
-  /* ========== LOGOUT BUTTON ========== */
+  
   #btn-logout {
     background-color: var(--red);
     margin-bottom: 2rem;
@@ -202,7 +211,7 @@
     font-weight: 700;
   }
   
-  /* ========== SWITCH LINKS ========== */
+  
   #show-register, #show-login {
     display: inline-block;
     margin-top: 1rem;
@@ -216,7 +225,7 @@
     color: var(--secondary-accent);
   }
   
-  /* ========== ANIMATIONS ========== */
+  
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -240,7 +249,7 @@
     }
   }
   
-  /* ========== RESPONSIVE ========== */
+  
   @media (max-width: 480px) {
     .container, .main {
       margin: 1rem auto;
