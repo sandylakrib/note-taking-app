@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="btn-logout">Log Out</button>
+    <h1>My Notebook</h1>
+
+    <form id="note-form">
+      <h2 id="form-title">Create a New Note</h2>
+      <div id="notes-error"></div>
+      <input type="text" id="note-title" placeholder="Note Title" />
+      <textarea id="note-content" rows="5" placeholder="Note Content"></textarea>
+      <button type="submit">Save</button>
+      <button type="button" id="btn-cancel" style="display:none;">Cancel</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search a note..." />
+
+    <div id="notes-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

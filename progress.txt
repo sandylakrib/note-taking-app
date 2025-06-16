@@ -1,0 +1,12 @@
+Day 1 (May 22, 2025) Progress:
+
+- Initialized Node.js project for Note-Taking App.  
+- Installed and set up Express.js.  
+- Created a minimal Express server in `server.js`.  
+- Troubleshot and resolved port conflict issues (5000 port was in use).  
+- Tested server successfully on port 3000 with `curl` and browser.  
+- Learned how to run the server with `node` and `nodemon`.  
+- Practiced opening multiple Terminal windows/tabs for testing.  
+- Set up `.env` file for environment variables (port).  
+- Learned about using VS Code’s `code` command and edited progress file.
+
